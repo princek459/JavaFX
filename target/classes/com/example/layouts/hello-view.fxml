@@ -5,35 +5,62 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.layouts.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<!--<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"-->
+<!--      fx:controller="com.example.layouts.HelloController">-->
+<!--    <padding>-->
+<!--        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>-->
+<!--    </padding>-->
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+<!--    <Label fx:id="welcomeText"/>-->
+<!--    <Button text="Hello!" onAction="#onHelloButtonClick"/>-->
 
-    <Button text="Button One"/>
-    <Button text="Button Two"/>
-    <Button text="Button Three"/>
-    <Button text="Really Long Button Four"/>
-    <Button text="Button Five"/>
+<!--    <Button text="Button One"/>-->
+<!--    <Button text="Button Two"/>-->
+<!--    <Button text="Button Three"/>-->
+<!--    <Button text="Really Long Button Four"/>-->
+<!--    <Button text="Button Five"/>-->
 
-</VBox>
+<!--</VBox>-->
 
 <!--<?import javafx.scene.layout.GridPane?>-->
-<!--<GridPane alignment="CENTER"  xmlns:fx="http://javafx.com/fxml"-->
+
+<!--<GridPane alignment="TOP_CENTER"  xmlns:fx="http://javafx.com/fxml"-->
 <!--          fx:controller="com.example.layouts.HelloController">-->
 <!--&lt;!&ndash;        this can help debug size problems&ndash;&gt;-->
 <!--&lt;!&ndash;        gridLineVisible = "true">&ndash;&gt;-->
 <!--        -->
-<!--        <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"/>-->
-<!--        <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>-->
-<!--        <Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>-->
-<!--        <Button text="Really Long Button Four" GridPane.rowIndex="1" GridPane.columnIndex="1"/>-->
-<!--        <Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>-->
 
-
+<!--&lt;!&ndash;        <Button text="Button One" GridPane.rowIndex="0" GridPane.columnIndex="0"&ndash;&gt;-->
+<!--&lt;!&ndash;        GridPane.halignment="RIGHT" />&ndash;&gt;-->
+<!--&lt;!&ndash;        <Button text="Button Two" GridPane.rowIndex="0" GridPane.columnIndex="1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <Button text="Button Three" GridPane.rowIndex="1" GridPane.columnIndex="0"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <Button text="Really Long Button Four" GridPane.rowIndex="1" GridPane.columnIndex="1"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <Button text="Button Five" GridPane.rowIndex="2" GridPane.columnIndex="0"/>&ndash;&gt;-->
 
 <!--</GridPane>-->
+
+<?import javafx.scene.layout.HBox?>
+<HBox alignment="BOTTOM_RIGHT"  xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.layouts.HelloController"
+      style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed;"
+      spacing="10"  >
+        <padding>
+                <Insets bottom="10" right="10" />
+        </padding>
+
+        <Button text="Okay" prefWidth="90" />
+        <Button text="Cancel" prefWidth="90" />
+        <Button text="Help" prefWidth="90" />
+
+
+</HBox>
+
+
+
+
+
+
+
+
+
+
